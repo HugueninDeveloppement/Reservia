@@ -15,12 +15,11 @@
 body {
     font-family: 'RalewayMedium','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2em;
-    margin:auto;
+    display:flex;
 }
 
 #bloc_page {
-    max-width: 1435px;
-    margin: 51px 55px 0px 51px;
+    margin: 5px 51px 0px 51px;
 }
 
 /*En-tete*/
@@ -31,25 +30,29 @@ header {
 }
 
     header img {
-        height: 75px;
+        height: 55px;
+        width:100px;
+        margin-left:4px;
     }
 
     header nav {
         display: flex;
         flex-direction: row;
-        align-items: center;
         width: 50%;
     }
 
         header nav ul {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: flex-end;
             width: 100%;
+            margin:0px;
         }
 
         header nav li {
             list-style-type: none;
+            padding-top:25px;
+            margin-right:69px;
         }
 
         header nav a {
@@ -57,6 +60,10 @@ header {
             text-decoration: none;
         }
 
-#btn_inscription {
-    color: #0065fc;
-}
+        nav li:hover{
+           border-top:1px solid #0065fc;
+        }
+
+        #btn_inscription {
+            color: #0065fc;
+        }
