@@ -1,0 +1,62 @@
+﻿/* insertion des polices choisis */
+
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('polices/static/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RalewayMedium';
+    src: url('polices/static/Raleway-Medium.ttf') format('truetype');
+}
+
+/* container general */
+
+body {
+    font-family: 'RalewayMedium','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    margin:auto;
+}
+
+#bloc_page {
+    max-width: 1435px;
+    margin: 51px 55px 0px 51px;
+}
+
+/*En-tete*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    header img {
+        height: 75px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+    }
+
+        header nav ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        header nav li {
+            list-style-type: none;
+        }
+
+        header nav a {
+            color: black;
+            text-decoration: none;
+        }
+
+#btn_inscription {
+    color: #0065fc;
+}
