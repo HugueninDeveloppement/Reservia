@@ -30,8 +30,8 @@ header {
 }
 
 header img {
-    height: 55px;
-    width:100px;
+    height: 28px;
+    width:88px;
     margin-left:4px;
 }
 
@@ -51,8 +51,10 @@ header nav ul {
 
 header nav li {
     list-style-type: none;
-    padding-top:25px;
-    margin-right:69px;
+    padding-top: 25px;
+    margin-right: 25px;
+    margin-left:44px;
+    font-size: 10px;
 }
 
 header nav a {
@@ -64,6 +66,350 @@ nav li:hover{
     border-top:1px solid #0065fc;
 }
 
+nav a:hover{
+    color:#0065fc;
+}
+
 #btn_inscription {
     color: #0065fc;
 }
+
+
+/*Section de recherche */
+
+#section_recherche {
+    display: flex;
+    flex-direction: column;
+}
+
+#section_recherche h1 {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+#section_recherche p {
+    font-size: 8px;
+    margin-top:2px;
+    margin-bottom:0px;
+}
+
+#section_recherche form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-radius: 15px;
+}
+
+#section_recherche form label {
+    background-color: #f2f2f2;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:52px;
+}
+
+#section_recherche i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#champ_recherche {
+    width: 236px;
+    padding-left: 10px;
+    font-family: 'RalewayBold';
+}
+
+#bouton_recherche {
+    color: white;
+    background-color: #0065fc;
+    width: 133px;
+    border-radius: 0px 10px 10px 0px;
+    font-size:11px;
+}
+
+#filtre_recherche {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#filtre_recherche h2 {
+    margin: 0px;
+    font-size: 11px;
+}
+
+#filtre_recherche ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 33px;
+    margin-left:33px;
+    margin-bottom:30px;
+    padding: 0px;
+    height:49px;
+}
+
+
+#filtre_recherche li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #f2f2f2;
+    border-radius: 35px;
+    align-items:center;
+    margin-right:29px;
+}
+
+#filtre_recherche i {
+    color: #0065fc;
+    background-color: #deebff;
+    height: 50px;
+    width:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#filtre_recherche p {
+    padding-left: 10px;
+    padding-right: 18px;
+    font-family: 'RalewayBold';
+    font-size: 9px;
+}
+
+#recherche_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#recherche_info i {
+    color: #0065fc;
+    border: 2px solid #f2f2f2;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    min-width: 28px;
+}
+
+#recherche_info p {
+    margin-left: 14px;
+    font-size:10px;
+}
+
+
+/*section hebergement*/
+#section_hebergement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#hebergement_propose {
+    margin-top: 10px;
+    width: 70%;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#section_hebergement h2 {
+    display: block;
+    margin-left: 30px;
+}
+
+#vignettes_hebergement_propose {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.detail_vignette__hebergement {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+    .detail_vignette__hebergement img {
+        height: 90px;
+        border: 2px solid white;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .detail_vignette__hebergement h3 {
+        font-size: 0.725em;
+        margin: 4px 0px 5px 6px;
+    }
+
+
+
+#section_hebergement a {
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.detail_vignette__hebergement p {
+    font-size: 0.6em;
+    margin: 0px 6px;
+}
+
+.note {
+    margin-left: 6px;
+    padding-bottom: 3px;
+}
+
+#hebergement_populaire {
+    width: 25%;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin-top: 10px;
+}
+
+    #hebergement_populaire h2 {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.875em;
+    }
+
+#vignettes_hebergement_populaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.detail_vignette__populaire {
+    width: 80%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+    .detail_vignette__populaire img {
+        width: 30%;
+        border: 2px solid white;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    .detail_vignette__populaire h3 {
+        display: block;
+        font-size: 0.6em;
+    }
+
+    .detail_vignette__populaire div p {
+        font-size: 0.6em;
+    }
+
+
+
+/*section activit�s*/
+#section_activite {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+    #section_activite h1 {
+        display: inline-block;
+    }
+
+.vignette_activite {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.triplette {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 47%;
+}
+
+.detail_vignette_activite_grande {
+    border: 2px solid #f2f2f2;
+    border-radius: 15px;
+}
+
+    .detail_vignette_activite_grande img {
+        height: 320px;
+        width: 280px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+.detail_vignette_activite {
+    border: 2px solid #f2f2f2;
+    border-radius: 15px;
+}
+
+.vignette_activite_petite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .vignette_activite_petite img {
+        height: 130px;
+        width: 280px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+.triplette p {
+    text-align: center;
+    margin-top: 2px;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    background-color: #f2f2f2;
+    margin-top: 10px;
+}
+
+.pied_page {
+    width: 30%;
+}
+
+footer h4 {
+    font-size: 0.8em;
+    font-family: 'Raleway-Semi-Bold';
+}
+
+footer a {
+    text-decoration: none;
+    font-family: 'ralewaythin';
+    font-size: 0.8em;
+    color: black;
+}
+
+
+
