@@ -3,6 +3,7 @@
 @font-face {
     font-family: 'RalewayBold';
     src: url('polices/static/Raleway-Bold.ttf') format('truetype');
+    font-size:16px;
 }
 
 @font-face {
@@ -16,10 +17,11 @@ body {
     font-family: 'RalewayMedium','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2em;
     display:flex;
+    margin-top:0px;
 }
 
 #bloc_page {
-    margin: 5px 51px 0px 51px;
+    margin: 0px 51px 0px 51px;
 }
 
 /*En-tete*/
@@ -30,9 +32,10 @@ header {
 }
 
 header img {
-    height: 28px;
-    width:88px;
+    height: 30px;
+    width:93px;
     margin-left:4px;
+    padding-top:50px;
 }
 
 header nav {
@@ -51,10 +54,10 @@ header nav ul {
 
 header nav li {
     list-style-type: none;
-    padding-top: 25px;
+    padding-top: 50px;
     margin-right: 25px;
     margin-left:44px;
-    font-size: 10px;
+    font-size: 0.9em;
 }
 
 header nav a {
@@ -83,12 +86,12 @@ nav a:hover{
 }
 
 #section_recherche h1 {
-    font-size: 11px;
+    font-size: 1em;
     margin-bottom: 5px;
 }
 
 #section_recherche p {
-    font-size: 8px;
+    font-size: 0.8em;
     margin-top:2px;
     margin-bottom:0px;
 }
@@ -127,7 +130,7 @@ nav a:hover{
     background-color: #0065fc;
     width: 133px;
     border-radius: 0px 10px 10px 0px;
-    font-size:11px;
+    font-size:0.9em;
 }
 
 #filtre_recherche {
@@ -138,7 +141,7 @@ nav a:hover{
 
 #filtre_recherche h2 {
     margin: 0px;
-    font-size: 11px;
+    font-size: 1em;
 }
 
 #filtre_recherche ul {
@@ -178,7 +181,7 @@ nav a:hover{
     padding-left: 10px;
     padding-right: 18px;
     font-family: 'RalewayBold';
-    font-size: 9px;
+    font-size:0.9em;
 }
 
 #recherche_info {
@@ -190,18 +193,17 @@ nav a:hover{
 #recherche_info i {
     color: #0065fc;
     border: 2px solid #f2f2f2;
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    min-width: 28px;
 }
 
 #recherche_info p {
     margin-left: 14px;
-    font-size:10px;
+    font-size:0.8em;
 }
 
 
@@ -210,12 +212,13 @@ nav a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top:44px;
 }
 
 
 #hebergement_propose {
     margin-top: 10px;
-    width: 70%;
+    width: 66%;
     background-color: #f2f2f2;
     border-radius: 15px;
     padding: 5px;
@@ -224,6 +227,9 @@ nav a:hover{
 #section_hebergement h2 {
     display: block;
     margin-left: 30px;
+    font-size:0.8em;
+    margin-top:48px;
+    margin-bottom:28px;
 }
 
 #vignettes_hebergement_propose {
@@ -235,34 +241,38 @@ nav a:hover{
 }
 
 .detail_vignette__hebergement {
-    width: 27%;
+    width: 248px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 10px;
     background-color: white;
+    border: 4px solid white;
     border-radius: 15px;
 }
 
-    .detail_vignette__hebergement img {
-        height: 90px;
-        border: 2px solid white;
-        border-radius: 15px 15px 0px 0px;
-    }
+.detail_vignette__hebergement img {
+    height: 119px;
+    border-radius: 15px 15px 0px 0px;
+}
 
-    .detail_vignette__hebergement h3 {
-        font-size: 0.725em;
-        margin: 4px 0px 5px 6px;
-    }
+.detail_vignette__hebergement h3 {
+    font-size: 0.725em;
+    margin: 4px 0px 5px 6px;
+}
 
 
 
 #section_hebergement a {
     display: inline-block;
     margin-left: 30px;
-    padding-top: 10px;
+    margin-top: 35px;
+    margin-bottom: 49px;
     text-decoration: none;
     color: black;
+    font-family: 'RalewayBold';
+    font-size: 0.9em;
 }
 
 .detail_vignette__hebergement p {
@@ -276,7 +286,7 @@ nav a:hover{
 }
 
 #hebergement_populaire {
-    width: 25%;
+    width: 30%;
     background-color: #f2f2f2;
     border-radius: 15px;
     display: flex;
@@ -285,11 +295,11 @@ nav a:hover{
     margin-top: 10px;
 }
 
-    #hebergement_populaire h2 {
-        display: flex;
-        justify-content: space-between;
-        font-size: 0.875em;
-    }
+#hebergement_populaire h2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875em;
+}
 
 #vignettes_hebergement_populaire {
     display: flex;
@@ -299,18 +309,18 @@ nav a:hover{
 }
 
 .detail_vignette__populaire {
-    width: 80%;
-    height: 90px;
+    width: 343px;
+    height: 144px;
     display: flex;
     flex-direction: row;
     align-self: center;
     background-color: white;
     border-radius: 15px;
+    border: 4px solid white;
 }
 
     .detail_vignette__populaire img {
-        width: 30%;
-        border: 2px solid white;
+        width: 132px;
         border-radius: 15px 0px 0px 15px;
     }
 
