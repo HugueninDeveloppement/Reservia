@@ -11,6 +11,7 @@
     src: url('polices/static/Raleway-Medium.ttf') format('truetype');
 }
 
+
 /* container general */
 
 body {
@@ -44,7 +45,7 @@ header img {
 }
 
 #inscription_telephone {
-    visibility:hidden ;
+    display :none ;
 }
 
 #inscription_telephone a {
@@ -509,13 +510,18 @@ footer a {
 }
 
 
-@media only screen (max-width: 400px) {
+/*Media Queries pour téléphone */
+@media only screen and (max-width: 610px) {
 
-
-    #inscription_telephone {
-        visibility:visible;
+    body {
+        background-color: black;
     }
 
-}
+    #inscription_telephone {
+    }
 
+    header nav a {
+        display:none;
+    }
+}
 
