@@ -141,12 +141,16 @@ nav a:hover{
     font-family: 'RalewayBold';
 }
 
-#bouton_recherche {
+#bouton_recherche_desktop {
     color: white;
     background-color: #0065fc;
     width: 133px;
     border-radius: 0px 10px 10px 0px;
-    font-size:0.9em;
+    font-size: 0.9em;
+}
+
+#bouton_recherche_mobile{
+    display:none;
 }
 
 #filtre_recherche {
@@ -514,14 +518,160 @@ footer a {
 @media only screen and (max-width: 610px) {
 
     body {
-        background-color: black;
+        font-size:0.8em;
     }
+
+    #bloc_page{
+        margin:auto;
+    }
+
+    /*Modification du header*/
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #header_mobile{
+        display:flex;
+        justify-content:space-between;
+    }
+
+    #header_mobile img{
+        padding:3px;
+    }
+
+
 
     #inscription_telephone {
+        display: inline;
+        display:flex;
+        align-items:center;
+        width:25%;
     }
 
-    header nav a {
-        display:none;
+
+    #inscription_telephone a {
+
+        color: #0065fc;
     }
+
+    header nav{
+        width:100%
+    }
+
+    #inscription_desktop {
+        display: none;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        padding:3px;
+    }
+
+    header nav li {
+        display:flex;
+        justify-content:center;
+        margin:auto;
+        width:49%;
+        padding:5px;
+    }
+
+    nav li:hover {
+        border-top:none;
+        border-bottom: 3px solid #0065fc;
+    }
+
+    /*section de recherche*/
+    #filtre_recherche ul{
+        flex-wrap:wrap;
+    }
+
+
+
+
+
+    /*section hebergement*/
+    #section_hebergement {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    /*Activités*/
+
+    .vignette_activite {
+        display: flex;
+        flex-direction:column;
+    }
+
+    .triplette{
+        display:flex;
+        flex-direction:column;
+    }
+
+
 }
 
+
+/*
+
+header img {
+    height: 30px;
+    width:93px;
+    margin-left:4px;
+    padding-top:50px;
+}
+
+#inscription_telephone {
+    display :none ;
+}
+
+#inscription_telephone a {
+    color: black;
+    text-decoration: none;
+}
+
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin:0px;
+}
+
+header nav li {
+    list-style-type: none;
+    padding-top: 50px;
+    margin-right: 25px;
+    margin-left:44px;
+    font-size: 0.9em;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav li:hover{
+    border-top:1px solid #0065fc;
+}
+
+nav a:hover{
+    color:#0065fc;
+}
+
+#btn_inscription {
+    color: #0065fc;
+}*/

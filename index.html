@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -12,13 +12,15 @@
 <body>
         <div id="bloc_page">
             <header>
-                <img src="images/logo/Reservia.png" alt="Réservia" />
-                <div id="inscription_telephone"><a href="#">S'incrire</a></div>
+                <div id="header_mobile">
+                    <img src="images/logo/Reservia.png" alt="Réservia" />
+                    <div id="inscription_telephone"><a href="#">S'incrire</a></div>
+                </div>
                 <nav>
                     <ul>
                         <li><a href="#">Hébergements</a></li>
                         <li><a href="#">Activités</a></li>
-                        <li><a id="btn_inscription" href="#">S'incrire</a></li>
+                        <li id="inscription_desktop"><a id="btn_inscription" href="#">S'incrire</a></li>
                     </ul>
                 </nav>
             </header>
@@ -30,7 +32,8 @@
                     <form action="/" method="post">
                         <label><i class="fas fa-map-marker-alt "></i></label>
                         <input id="champ_recherche" type="text" name="Ville_recherchee" placeholder="Marseille,France" />
-                        <input id="bouton_recherche" type="submit" value="Rechercher"/>
+                        <input id="bouton_recherche_desktop" type="submit" value="Rechercher"/>
+                        <button id="bouton_recherche_mobile" name="recherche" type="submit" ><i class="fas fa-search fa-xs"></i></button>
                     </form>
                     <div id="filtre_recherche">
                         <h2>Filtres</h2>
