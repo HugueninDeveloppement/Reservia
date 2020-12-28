@@ -660,6 +660,9 @@ footer a {
        margin:2em auto 1.1em 1.2em;
     }
    
+    #section_recherche p{
+        padding-right:0.8em;
+    }
 
 
 
@@ -712,6 +715,7 @@ footer a {
     .detail_vignette__hebergement {
         width: 96%;
         box-shadow:  5px 10px 18px #f2f2f2;
+        margin-bottom:1em;
     }
 
         .detail_vignette__hebergement img {
@@ -779,20 +783,18 @@ footer a {
 
     }
 
-    .pied_page{
-        font-size:1.2em;
-        padding-left:1.8em;
-        margin-left:0px;
-        
+    .pied_page {
+        font-size: 1.2em;
+        padding-left: 1.8em;
+        margin-left: 0px;
+        width: 90%;
     }
 
     .pied_page h4 {
-        width:90%;
         margin:0px;
     }
 
         .pied_page p {
-            width: 90%;
             margin: 0px;
         }
 
