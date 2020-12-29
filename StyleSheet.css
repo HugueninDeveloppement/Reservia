@@ -3,12 +3,13 @@
 @font-face {
     font-family: 'RalewayBold';
     src: url('polices/static/Raleway-Bold.ttf') format('truetype');
-    font-size:16px;
+    font-size:17px;
 }
 
 @font-face {
     font-family: 'RalewayMedium';
     src: url('polices/static/Raleway-Medium.ttf') format('truetype');
+    font-size: 17px;
 }
 
 
@@ -28,6 +29,7 @@ body {
 #bloc_page {
     margin: 0px 51px 0px 51px;
     align-self:center;
+    max-width:1610px;
 }
 
 /*En-tete*/
@@ -421,7 +423,7 @@ nav a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 48%;
+    width: 46%;
 }
 
 .detail_vignette_activite_grande {
